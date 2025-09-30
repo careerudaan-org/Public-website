@@ -11,8 +11,5 @@ export default defineConfig({
     port: 5173,
     open: true,
   },
-  // Remove CSS PostCSS configuration
-  css: {
-    postcss: null,
-  }
+  // Use default PostCSS pipeline so Tailwind works
 })

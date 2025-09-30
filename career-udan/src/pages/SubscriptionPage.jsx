@@ -176,33 +176,85 @@ const SubscriptionPage = () => {
             Stand out from the crowd, get noticed by top recruiters, and land your dream job 5x faster
           </p>
 
-          {/* Pricing Card */}
-          <div className="max-w-md mx-auto bg-white text-gray-800 rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Crown className="text-yellow-500" size={32} />
-              <h2 className="text-3xl font-bold">Career Udan Prime</h2>
-            </div>
-            
-            <div className="mb-6">
-              <div className="flex items-baseline justify-center gap-2 mb-2">
-                <span className="text-5xl font-bold text-blue-600">₹149</span>
-                <span className="text-gray-600">/month</span>
+          {/* Pricing Cards */}
+          <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+            {/* Basic Plan */}
+            <div className="bg-white text-gray-800 rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform">
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Star className="text-blue-500" size={32} />
+                <h2 className="text-2xl font-bold">Basic Plan</h2>
               </div>
-              <p className="text-sm text-gray-500 line-through">Regular Price: ₹299</p>
-              <p className="text-green-600 font-semibold">Save 50% - Limited Time!</p>
+              
+              <div className="mb-6">
+                <div className="flex items-baseline justify-center gap-2 mb-2">
+                  <span className="text-4xl font-bold text-blue-600">₹89</span>
+                  <span className="text-gray-600">/month</span>
+                </div>
+                <p className="text-sm text-gray-500 line-through">Regular Price: ₹149</p>
+                <p className="text-green-600 font-semibold">Save 40% - Limited Time!</p>
+              </div>
+
+              <ul className="text-sm text-gray-600 mb-6 space-y-2">
+                <li>✓ 50 Job Applications/month</li>
+                <li>✓ Basic Profile Visibility</li>
+                <li>✓ Email Support</li>
+                <li>✓ Job Alerts</li>
+              </ul>
+
+              <button
+                onClick={handleSubscribe}
+                className="w-full bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg mb-4 flex items-center justify-center gap-2"
+              >
+                <Zap size={20} />
+                Choose Basic Plan
+              </button>
+
+              <p className="text-sm text-gray-600">
+                ✓ Cancel anytime • ✓ 7-day money-back guarantee
+              </p>
             </div>
 
-            <button
-              onClick={handleSubscribe}
-              className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg mb-4 flex items-center justify-center gap-2"
-            >
-              <Zap size={20} />
-              Upgrade to Premium Now
-            </button>
+            {/* Premium Plan */}
+            <div className="bg-white text-gray-800 rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-transform border-2 border-yellow-400 relative">
+              <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                <span className="bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">MOST POPULAR</span>
+              </div>
+              
+              <div className="flex items-center justify-center gap-2 mb-4">
+                <Crown className="text-yellow-500" size={32} />
+                <h2 className="text-2xl font-bold">Premium Plan</h2>
+              </div>
+              
+              <div className="mb-6">
+                <div className="flex items-baseline justify-center gap-2 mb-2">
+                  <span className="text-4xl font-bold text-purple-600">₹149</span>
+                  <span className="text-gray-600">/month</span>
+                </div>
+                <p className="text-sm text-gray-500 line-through">Regular Price: ₹299</p>
+                <p className="text-green-600 font-semibold">Save 50% - Limited Time!</p>
+              </div>
 
-            <p className="text-sm text-gray-600">
-              ✓ Cancel anytime • ✓ 7-day money-back guarantee
-            </p>
+              <ul className="text-sm text-gray-600 mb-6 space-y-2">
+                <li>✓ Unlimited Job Applications</li>
+                <li>✓ Featured Profile</li>
+                <li>✓ Priority Support</li>
+                <li>✓ Direct Messaging</li>
+                <li>✓ Advanced Analytics</li>
+                <li>✓ Exclusive Job Listings</li>
+              </ul>
+
+              <button
+                onClick={handleSubscribe}
+                className="w-full bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white font-bold py-4 rounded-lg transition-all transform hover:scale-105 shadow-lg mb-4 flex items-center justify-center gap-2"
+              >
+                <Crown size={20} />
+                Choose Premium Plan
+              </button>
+
+              <p className="text-sm text-gray-600">
+                ✓ Cancel anytime • ✓ 7-day money-back guarantee
+              </p>
+            </div>
           </div>
         </div>
       </section>

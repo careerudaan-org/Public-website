@@ -38,40 +38,45 @@ const Home = () => {
   };
 
   const featuredJobs = [
-    { id: 1, title: 'Frontend Developer', company: 'Tech Corp', location: 'Mumbai', type: 'Full-time', salary: '₹6-10 LPA' },
-    { id: 2, title: 'Backend Developer', company: 'Innovate Solutions', location: 'Bangalore', type: 'Full-time', salary: '₹8-12 LPA' },
-    { id: 3, title: 'UI/UX Designer', company: 'Creative Labs', location: 'Pune', type: 'Remote', salary: '₹5-8 LPA' },
-    { id: 4, title: 'Data Analyst', company: 'Data Insights', location: 'Delhi', type: 'Full-time', salary: '₹7-11 LPA' },
+    { id: 1, title: 'Telecalling Executive', company: 'Tech Mahindra BPO', location: 'Mumbai', type: 'Full-time', salary: '₹2.5-4 LPA', experience: '0-2 years' },
+    { id: 2, title: 'Back Office Executive', company: 'Wipro BPO', location: 'Bangalore', type: 'Full-time', salary: '₹2.8-4.5 LPA', experience: '1-3 years' },
+    { id: 3, title: 'HR Executive', company: 'Infosys BPM', location: 'Pune', type: 'Full-time', salary: '₹3.5-6 LPA', experience: '2-4 years' },
+    { id: 4, title: 'Team Lead - Customer Support', company: 'HCL BPO', location: 'Delhi', type: 'Full-time', salary: '₹4-7 LPA', experience: '3-5 years' },
   ];
 
   const categories = [
-    { name: 'IT & Software', count: 1200, icon: '💻' },
-    { name: 'Marketing', count: 850, icon: '📈' },
-    { name: 'Finance', count: 650, icon: '💰' },
-    { name: 'Design', count: 450, icon: '🎨' },
-    { name: 'Sales', count: 900, icon: '🤝' },
-    { name: 'HR', count: 350, icon: '👥' },
+    { name: 'Telecalling', count: 2500, icon: '📞' },
+    { name: 'Back Office', count: 1800, icon: '💼' },
+    { name: 'Customer Support', count: 1200, icon: '🎧' },
+    { name: 'HR & Admin', count: 800, icon: '👥' },
+    { name: 'Sales & Marketing', count: 1500, icon: '📈' },
+    { name: 'Team Lead', count: 600, icon: '👨‍💼' },
   ];
 
   const testimonials = [
-    { name: 'Priya Sharma', role: 'Software Engineer', text: 'Career Udan helped me land my dream job! The process was smooth and professional.', rating: 5 },
-    { name: 'Rahul Verma', role: 'Marketing Manager', text: 'Excellent platform with genuine opportunities. Highly recommended!', rating: 5 },
-    { name: 'Anita Desai', role: 'Data Scientist', text: 'The premium subscription is worth every penny. Got multiple interview calls within a week!', rating: 5 },
+    { name: 'Priya Sharma', role: 'Telecalling Executive', text: 'Career Udan helped me land my dream BPO job at Tech Mahindra! The process was smooth and professional.', rating: 5 },
+    { name: 'Rahul Verma', role: 'Team Lead - Customer Support', text: 'Excellent platform with genuine BPO opportunities. Got promoted to team lead within 6 months!', rating: 5 },
+    { name: 'Anita Desai', role: 'HR Executive', text: 'The premium subscription is worth every penny. Got multiple interview calls from top BPO companies within a week!', rating: 5 },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
       {/* Hero Section */}
       <section className="relative pt-20 pb-32 px-4 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-700 opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-600/95 to-purple-700/95"></div>
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS1vcGFjaXR5PSIwLjEiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmlkKSIvPjwvc3ZnPg==')] opacity-20"></div>
         
         <div className="relative max-w-6xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 animate-fade-in">
-            Find Your Dream Career with <span className="text-yellow-300">Career Udan</span>
+          <div className="mb-8">
+            <span className="inline-block bg-yellow-400 text-gray-900 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+              🎯 Specialized in BPO & Telecalling Jobs
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Launch Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-orange-400 to-red-400">BPO Career</span> with Career Udan
           </h1>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Connect with top companies and unlock thousands of job opportunities across India
+          <p className="text-xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Join India's leading BPO companies. Find telecalling, back-office, HR, and team lead positions with top employers across the country.
           </p>
 
           {/* Search Bar */}
@@ -101,7 +106,7 @@ const Home = () => {
             </div>
             <button
               type="submit"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-300 shadow-lg"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 shadow-lg transform hover:scale-105"
             >
               Search Jobs
             </button>
@@ -109,12 +114,12 @@ const Home = () => {
 
           {/* Quick Links */}
           <div className="mt-8 flex flex-wrap justify-center gap-3">
-            <span className="text-blue-100">Popular Searches:</span>
-            {['Remote Jobs', 'Frontend Developer', 'Data Analyst', 'UI/UX Designer'].map((term) => (
+            <span className="text-blue-100 font-medium">Popular BPO Roles:</span>
+            {['Telecalling Executive', 'Back Office Executive', 'HR Executive', 'Team Lead', 'Customer Support', 'Sales Executive'].map((term) => (
               <button
                 key={term}
                 onClick={() => { setSearchQuery(term); navigate(`/jobs?search=${term}`); }}
-                className="bg-blue-500 bg-opacity-30 text-white px-4 py-1 rounded-full text-sm hover:bg-opacity-50 transition-all"
+                className="bg-gradient-to-r from-blue-500 to-purple-600 text-white px-6 py-2 rounded-full text-sm hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg"
               >
                 {term}
               </button>
@@ -126,7 +131,7 @@ const Home = () => {
       {/* Stats Section */}
       <section className="py-16 px-4 -mt-16 relative z-10">
         <div className="max-w-6xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl p-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-gradient-to-r from-white to-blue-50 rounded-2xl shadow-2xl p-8 grid grid-cols-1 md:grid-cols-3 gap-8 border border-blue-100">
             <div className="text-center">
               <Briefcase className="mx-auto mb-4 text-blue-600" size={48} />
               <h3 className="text-4xl font-bold text-gray-800 mb-2">{stats.totalJobs.toLocaleString()}+</h3>
@@ -147,7 +152,7 @@ const Home = () => {
       </section>
 
       {/* Featured Jobs */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-16 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-800 mb-4">Featured Jobs</h2>
@@ -166,7 +171,7 @@ const Home = () => {
                     {job.type}
                   </span>
                 </div>
-                <div className="flex items-center text-gray-600 mb-4 gap-4">
+                <div className="flex items-center text-gray-600 mb-4 gap-4 flex-wrap">
                   <span className="flex items-center">
                     <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -179,10 +184,16 @@ const Home = () => {
                     </svg>
                     {job.salary}
                   </span>
+                  <span className="flex items-center">
+                    <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    {job.experience}
+                  </span>
                 </div>
                 <Link 
                   to={`/jobs/${job.id}`} 
-                  className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all transform hover:scale-105 shadow-lg"
                 >
                   View Details
                 </Link>
@@ -193,7 +204,7 @@ const Home = () => {
           <div className="text-center">
             <Link 
               to="/jobs" 
-              className="inline-block bg-gray-800 text-white px-8 py-3 rounded-lg hover:bg-gray-900 transition-colors font-semibold"
+              className="inline-block bg-gradient-to-r from-gray-800 to-gray-900 text-white px-8 py-3 rounded-lg hover:from-gray-900 hover:to-black transition-all transform hover:scale-105 shadow-lg font-semibold"
             >
               Browse All Jobs →
             </Link>
@@ -226,10 +237,10 @@ const Home = () => {
       </section>
 
       {/* Premium Section */}
-      <section className="py-16 px-4 bg-gradient-to-r from-purple-600 to-indigo-700">
+      <section className="py-16 px-4 bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-700">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Unlock Premium Features</h2>
-          <p className="text-xl mb-8 text-purple-100">Get priority access to top jobs for just ₹149</p>
+          <p className="text-xl mb-8 text-purple-100">Get priority access to top jobs starting from ₹89</p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
             <div className="flex flex-col items-center">
@@ -251,7 +262,7 @@ const Home = () => {
 
           <Link 
             to="/subscription" 
-            className="inline-block bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg hover:bg-yellow-300 transition-colors font-bold text-lg shadow-xl"
+            className="inline-block bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-900 px-8 py-4 rounded-lg hover:from-yellow-300 hover:to-orange-300 transition-all transform hover:scale-105 font-bold text-lg shadow-xl"
           >
             Upgrade to Premium →
           </Link>
@@ -286,20 +297,20 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 px-4 bg-blue-600">
+      <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-purple-600">
         <div className="max-w-4xl mx-auto text-center text-white">
           <h2 className="text-4xl font-bold mb-6">Ready to Take Off Your Career?</h2>
           <p className="text-xl mb-8 text-blue-100">Join thousands of job seekers finding their perfect match</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/signup" 
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-colors font-bold text-lg shadow-xl"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition-all transform hover:scale-105 font-bold text-lg shadow-xl"
             >
               Get Started - It's Free
             </Link>
             <Link 
               to="/jobs" 
-              className="bg-blue-700 text-white px-8 py-4 rounded-lg hover:bg-blue-800 transition-colors font-bold text-lg border-2 border-white"
+              className="bg-gradient-to-r from-blue-700 to-purple-700 text-white px-8 py-4 rounded-lg hover:from-blue-800 hover:to-purple-800 transition-all transform hover:scale-105 font-bold text-lg border-2 border-white shadow-xl"
             >
               Browse Jobs
             </Link>

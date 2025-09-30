@@ -13,12 +13,19 @@ import Home from './pages/Home';
 import JobDetailsPage from './pages/JobDetailsPage';
 import SubscriptionPage from './pages/SubscriptionPage';
 import HelpDesk from './pages/HelpDesk';
+import Support from './pages/Support';
 // import Settings from './pages/Settings';
 // import NotFound from './pages/NotFound';
 
+// Legal Pages
+import TermsOfService from './pages/legal/TermsOfService';
+import PrivacyPolicy from './pages/legal/PrivacyPolicy';
+import RefundPolicy from './pages/legal/RefundPolicy';
+import CancellationPolicy from './pages/legal/CancellationPolicy';
+
 // Auth Pages
-// import LoginPage from './pages/auth/LoginPage';
-// import SignupPage from './pages/auth/SignupPage';
+import LoginPage from './pages/auth/LoginPage';
+import SignupPage from './pages/auth/SignupPage';
 
 // Candidate Pages
 // import CandidateHome from './pages/candidate/CandidateHome';
@@ -83,12 +90,11 @@ function App() {
               <Route path="/contact" element={<PlaceholderPage title="Contact Us" />} />
               <Route path="/subscription" element={<SubscriptionPage />} />
               <Route path="/help" element={<HelpDesk />} />
+              <Route path="/support" element={<Support />} />
 
               {/* Auth Routes */}
-              {/* <Route path="/login" element={<LoginPage />} /> */}
-              <Route path="/login" element={<PlaceholderPage title="Login" />} />
-              {/* <Route path="/signup" element={<SignupPage />} /> */}
-              <Route path="/signup" element={<PlaceholderPage title="Sign Up" />} />
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/signup" element={<SignupPage />} />
 
               {/* Candidate Protected Routes */}
               {/* <Route path="/dashboard" element={<CandidateHome />} /> */}
@@ -108,6 +114,12 @@ function App() {
               <Route path="/hr/manage-jobs" element={<PlaceholderPage title="Manage Jobs" />} />
               {/* <Route path="/hr/applications" element={<ViewApplications />} /> */}
               <Route path="/hr/applications" element={<PlaceholderPage title="View Applications" />} />
+
+              {/* Legal Routes */}
+              <Route path="/legal/terms" element={<TermsOfService />} />
+              <Route path="/legal/privacy" element={<PrivacyPolicy />} />
+              <Route path="/legal/refund" element={<RefundPolicy />} />
+              <Route path="/legal/cancellation" element={<CancellationPolicy />} />
 
               {/* 404 Not Found */}
               {/* <Route path="*" element={<NotFound />} /> */}
